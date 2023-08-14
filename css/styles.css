@@ -26,7 +26,7 @@ main {
 
     background-color: hsl(217, 19%, 24%);
 
-    height: 220px;
+    max-height: 300px;
     padding: 8px 8px;
     border-radius: 12px;
     width: 360px;
@@ -62,8 +62,16 @@ main {
 
 .advice img.divider {
     width: 90%;
+    margin-bottom: 32px;
 }
 
 .advice button img {
     height: 18px;
+}
+
+@media (max-width: 420px) {
+    .advice {
+        width: 280px;
+        max-height: 360px;
+    }
 }
